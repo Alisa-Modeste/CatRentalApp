@@ -1,0 +1,34 @@
+<h1>Edit a Cat!!</h1>
+
+<form action="<%=cat_url %>" method="post">
+  <input type="hidden" name="_method" value="PUT">
+
+  <p><label for="cat_name">Cat's name:</label>
+  <input type="text" name="cat[name]" id="cat_name"></p>
+
+  <p><label for="cat_age">Cat's (approx) age:</label>
+  <input type="text" name="cat[age]" id="cat_age"></p>
+
+  <label for="cat_birth_date">Cat's birthdate: (if known)</label>
+  <input type="text" name="cat[birth_date]" id="cat_birth_date">
+
+  <p><label for="cat_color_">Cat's color:</label>
+  <input type="checkbox" name="cat[color][]" id="cat_color_red" value="red">
+  <label for="cat_color_red">Red</label>
+  <input type="checkbox" name="cat[color][]" id="cat_color_black" value="black">
+  <label for="cat_color_black">Black</label>
+  <input type="checkbox" name="cat[color][]" id="cat_color_brown" value="brown">
+  <label for="cat_color_brown">Brown</label>
+  <input type="checkbox" name="cat[color][]" id="cat_color_white" value="white">
+  <label for="cat_color_white">White</label>
+  <input type="checkbox" name="cat[color][]" id="cat_color_gray" value="gray">
+  <label for="cat_color_gray">Gray</label></p>
+
+  <label for="cat_sex">Cat's sex:</label>
+  <select name="cat[sex]" id="cat_sex">
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+  </select>
+
+  <p><button type="submit">Submit</button></p>
+</form>

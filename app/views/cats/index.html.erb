@@ -1,0 +1,10 @@
+<h1>Listing Cats</h1>
+
+
+<table>
+  <tr><th>Cat Name</th> <th>Cat Info</th>
+      <% @cats.each do |cat| %>
+      <tr><td><%= "#{cat.name}" %></td> <td><a href= <%= "./cats/#{cat.id}"%>> Cat's page</a></tr>
+
+       <% end %>
+</table>
